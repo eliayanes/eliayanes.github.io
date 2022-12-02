@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
- <head>
+  <head>
   <title>Test Page: Don't Panic</title>
   <meta charset="utf-8">
     
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/main.css">
-</head> 
+</head>
+  <!-- flexbox container -->
   <body>
-   <header class="header">
+      <!-- 1st potential flexbox item, but not flexing because position: fixed -->
+    <header class="header">
   <nav>
    
 <ul class="header-nav nav-links">
   <li><a href="/">Home</a></li>
-<li><a href="">Nav 1</a></li>
-<li><a href="">Nav 2</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li><a href="/blog">Blog</a></li>
 <li><a href="">Nav 3</a></li>
-
 </ul>
   </nav>
   <a href="/" class="header-logo">
@@ -24,7 +25,10 @@
   </a>
    
 </header>
-    <div class="full-hero hero-home">
+<!-- 2nd flexbox item, the only one that will be changing in size -->
+    <div class="content-container">
+      <div class="home">
+<div class="full-hero hero-home">
   <div class="hero-content">
     <h1>CODE DANGEROUSLY</h1>
     <ul class="social-list">
@@ -139,6 +143,9 @@
     </div>
   </div>
 </div>
+</div>
+    </div>
+<!-- 3rd potential flexbox item, but not given a flex: property -->
     <footer class="footer">
   <a class="footer-logo" href="/">
     <img src="/images/logo.png" alt="Learn Enough"/>
@@ -146,10 +153,9 @@
   <nav>
     <ul class="footer-nav nav-links">
       <li><a href="/">Home</a></li>
-<li><a href="">Nav 1</a></li>
-<li><a href="">Nav 2</a></li>
-<li><a href="">Nav 3</a></li>
- 
+<li><a href="/gallery">Gallery</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="">Nav 3</a></li> 
     </ul>
     
       <ul class="footer-nav">
